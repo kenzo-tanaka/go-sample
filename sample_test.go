@@ -3,6 +3,7 @@ package main
 import (
 	"testing"
 	"github.com/stretchr/testify/assert"
+	"./calc"
 )
 
 func add(a, b int) int {
@@ -10,5 +11,5 @@ func add(a, b int) int {
 }
 
 func TestAdd(t *testing.T) {
-	assert.Equal(t, add(1,1), 2)
+	assert.Equal(t, calc.Add(1,1), 2)
 }
