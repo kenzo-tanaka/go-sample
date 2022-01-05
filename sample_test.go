@@ -16,6 +16,11 @@ func add(a, b int) (sum int) {
 	return
 }
 
+func defaultValue() int {
+	var i int
+	return i
+}
+
 func TestAdd(t *testing.T) {
 	assert.Equal(t, calc.Add(1,1), 2)
 }
@@ -25,4 +30,8 @@ func TestPerson(t *testing.T) {
 	person.Lastname = "Kenzo"
 	person.Firstname = "Tanaka"
 	assert.Equal(t, person.Lastname, "Kenzo")
+}
+
+func TestDefaultValue(t *testing.T) {
+	assert.Equal(t, defaultValue(), 0)
 }
