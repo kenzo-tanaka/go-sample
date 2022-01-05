@@ -10,6 +10,8 @@ import (
 // 関数の外では var が必要
 // k := 3
 
+const Pi = 3.14
+
 type Person struct {
 	Lastname  string
 	Firstname string
