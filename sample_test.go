@@ -11,8 +11,9 @@ type Person struct {
 	Firstname string
 }
 
-func add(a, b int) int {
-	return a + b
+func add(a, b int) (sum int) {
+	sum = a + b
+	return
 }
 
 func TestAdd(t *testing.T) {
