@@ -6,6 +6,9 @@ import (
 	"./calc"
 )
 
+// 関数の外では var が必要
+// k := 3
+
 type Person struct {
 	Lastname string
 	Firstname string
