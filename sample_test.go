@@ -2,15 +2,16 @@ package main
 
 import (
 	"testing"
-	"github.com/stretchr/testify/assert"
+
 	"./calc"
+	"github.com/stretchr/testify/assert"
 )
 
 // 関数の外では var が必要
 // k := 3
 
 type Person struct {
-	Lastname string
+	Lastname  string
 	Firstname string
 }
 
@@ -25,7 +26,7 @@ func defaultValue() int {
 }
 
 func TestAdd(t *testing.T) {
-	assert.Equal(t, calc.Add(1,1), 2)
+	assert.Equal(t, calc.Add(1, 1), 2)
 }
 
 func TestPerson(t *testing.T) {
