@@ -25,6 +25,10 @@ func defaultValue() int {
 	return i
 }
 
+func convert(num int) float64 {
+	return float64(num)
+}
+
 func TestAdd(t *testing.T) {
 	assert.Equal(t, calc.Add(1, 1), 2)
 }
@@ -38,4 +42,8 @@ func TestPerson(t *testing.T) {
 
 func TestDefaultValue(t *testing.T) {
 	assert.Equal(t, defaultValue(), 0)
+}
+
+func TestConvert(t *testing.T) {
+	assert.Equal(t, convert(1), 1.0)
 }
